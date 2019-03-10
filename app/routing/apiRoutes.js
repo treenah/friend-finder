@@ -2,7 +2,7 @@ console.log('API Route Connected Successfully');
 
 
 // Link in Friends Data
-var friendsData = require('../data/friends.js');
+var friendsData = require('friends.js');
 
 
 // Includes Two Routes
