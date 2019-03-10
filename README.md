@@ -1,4 +1,4 @@
-FriendFinder
+<h1><strong>FriendFinder</strong></h1>
 
 A fullstack match making application using the Express package for Node.js!
 
