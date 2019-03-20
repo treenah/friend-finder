@@ -1,13 +1,12 @@
-
-var path = require("path");
-var friends = require("/data/friends.js");
+const path = require("path");
+var friends = require("../data/friends.js");
 
 module.exports = function(app){
 
-    // app.get('/api/friends', function(req, res){
-    //     console.log("Reading API");
-    //     res.json(friends);
-    // });
+    app.get('/api/friends', function(req, res){
+        console.log("Reading API");
+        res.json(friends);
+    });
 
     app.post("/api/new", function(req, res) {
       //setup variables for finding match
@@ -35,4 +34,4 @@ module.exports = function(app){
         friends.push(newFriend);
         res.json(friends[index]);
     });
-};
+};;
